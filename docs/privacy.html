@@ -24,7 +24,7 @@
 <body>
 <main>
   <h1>Sam — Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-10-24 · App: com.pocketcoder.app</p>
+  <p class="meta">Last updated: 2026-10-27 · App: com.pocketcoder.app</p>
 
   <p>Sam is a personal assistant that runs <strong>on your phone</strong>. We (the developer) do
   <strong>not</strong> run a server, do <strong>not</strong> have an account system, and do
@@ -45,22 +45,37 @@
     <li><strong>Notifications:</strong> Sam can read your notifications <strong>on the device</strong>
       to build your briefing. They are <strong>never</strong> sent anywhere.</li>
     <li><strong>Location:</strong> used <strong>on the device</strong> for maps. To find places or a
-      route, your search and approximate location may be sent to free map services (OpenStreetMap /
-      Nominatim / Photon / Overpass / OSRM) and to Open-Meteo for the briefing's forecast, and — only if you
-      enable it — to <strong>Apify</strong> for place ratings.</li>
-    <li><strong>Microphone:</strong> used for voice and the “Hey Sam” wake word. If you enable the
-      <strong>cloud voice</strong>, the text being spoken is sent to your voice provider (e.g.
-      ElevenLabs) to produce audio.</li>
+      route, your search and your location (the phone’s current fix) may be sent to free map services
+      (OpenStreetMap / Nominatim / Photon / Overpass / OSRM) and to Open-Meteo for the briefing’s
+      forecast, and — only if you enable it — to <strong>Apify</strong> for place ratings. No location
+      history is stored.</li>
+    <li><strong>Microphone:</strong> used for voice and the “Hey Sam” wake word. Your speech is
+      turned into text by the phone’s speech recognizer (usually Google’s; on some phones this runs
+      on the device itself); Sam keeps no recording of it. If you enable the <strong>cloud
+      voice</strong>, the text being spoken is sent to your voice provider (e.g. ElevenLabs) to
+      produce audio.</li>
     <li><strong>Camera (“See”):</strong> a photo you choose to show is sent to your AI provider (e.g.
       DeepSeek) to answer your question.</li>
     <li><strong>AI chat, apps and images:</strong> the text you enter is sent to the AI provider you
       connected (e.g. DeepSeek) to produce the answer; image prompts go to your image provider (e.g.
       Replicate).</li>
+    <li><strong>Calendar:</strong> if you turn the calendar connector on, Sam reads event titles and
+      times for the next seven days <strong>on the phone</strong>. The short “Next: …” line in your
+      briefing is made on the phone; when you chat with the calendar on, those events travel with
+      your message to your AI provider, so she can answer “what’s on today”. Turn it off and nothing
+      is read.</li>
+    <li><strong>Crash reports:</strong> if an app you generated crashes, it can send its stack trace
+      to Sam <strong>on the phone</strong>. Only when you tap the one-tap AI fix is that trace — with
+      the project’s source files — sent to your AI provider (e.g. DeepSeek) to find the bug. Nothing
+      about a crash leaves the phone unless you ask for the fix.</li>
+    <li><strong>Your name:</strong> the name you give Sam in Settings is included in the message she
+      sends to your AI provider, so she can talk to you by it. Leave it blank and nothing is
+      added.</li>
     <li><strong>Web search:</strong> when a question needs current information, the search text is
       sent to a search provider — <strong>DuckDuckGo</strong> by default, or <strong>Brave
       Search</strong> if you add your own key. Results may link to <strong>Wikipedia</strong> or
       <strong>Google News</strong>; opening one of those links is your tap, not the app's.</li>
-    <li><strong>Weather:</strong> for the briefing, your approximate location is sent to
+    <li><strong>Weather:</strong> for the briefing, your location (the phone’s current fix) is sent to
       <strong>Open-Meteo</strong> (no account, no key).</li>
     <li><strong>Purchases:</strong> Sam Pro is bought through <strong>Google Play Billing</strong>.
       Google handles the payment; we never see your card details.</li>
